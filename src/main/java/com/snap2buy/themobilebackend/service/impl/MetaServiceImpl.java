@@ -37,8 +37,8 @@ import java.util.*;
 /**
  * Created by sachin on 10/17/15.
  */
-/*@Component(value = BeanMapper.BEAN_META_SERVICE)
-@Scope("prototype")*/
+/*@Component(value = BeanMapper.BEAN_META_SERVICE)*/
+@Scope("prototype")
 @Service
 public class MetaServiceImpl implements MetaService {
 

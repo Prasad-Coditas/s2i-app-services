@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
 import java.math.BigDecimal;
@@ -30,8 +31,9 @@ import static com.snap2buy.themobilebackend.util.ConverterUtil.ifNullToEmpty;
 /**
  * Created by sachin on 10/17/15.
  */
-@Component(value = BeanMapper.BEAN_IMAGE_STORE_DAO)
+//@Component(value = BeanMapper.BEAN_IMAGE_STORE_DAO)
 @Scope("prototype")
+@Service
 public class ProcessImageDaoImpl implements ProcessImageDao {
 
 	private static final String MAX_UPC_CONFIDENCE = "1.0";
